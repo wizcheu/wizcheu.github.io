@@ -17,7 +17,7 @@
       <pubDate>Thu, 10 Jan 2019 19:10:03 +0800</pubDate>
       
       <guid>https://blog.wizchen.com/post/markdown%E8%AF%AD%E6%B3%95%E9%80%9F%E6%9F%A5%E8%A1%A8/</guid>
-      <description>1. Overview 2. Headings  2.1. Alternate Syntax  3. Paragraphs 4. Line Breaks 5. Emphasis  5.1. Bold 5.2. Italic 5.3. Bold and Italic  6. Blockquotes  6.1. Blockquotes with Multiple Paragraphs 6.2. Nested Blockquotes 6.3. Blockquotes with Other Elements  7. Lists  7.1. Ordered Lists 7.2. Unordered Lists 7.3. Adding Elements in Lists  7.3.1. Paragraphs 7.3.2. Blockquotes 7.3.3. Code Blocks 7.3.4. Images   8.</description>
+      <description>Overview Headings  Alternate Syntax  Paragraphs Line Breaks Emphasis  Bold Italic Bold and Italic  Blockquotes  Blockquotes with Multiple Paragraphs Nested Blockquotes Blockquotes with Other Elements  Lists  Ordered Lists Unordered Lists Adding Elements in Lists  Paragraphs Blockquotes Code Blocks Images   Code  Escaping Tick Marks Code Blocks  Horizontal Rules Links  Adding Titles URLs and Email Addresses Formatting Links Reference-style Links  Formatting the First Part of the Link Formatting the Second Part of the Link An Example Putting the Parts Together   Images  Linking Images  Escaping Characters  Characters You Can Escape   Overview Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document.</description>
     </item>
     
   </channel>

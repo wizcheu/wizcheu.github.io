@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on wizcheu&#39;s blog</title>
+    <link>https://blog.wizchen.com/tags/math/</link>
+    <description>Recent content in Math on wizcheu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jan 2019 18:58:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.wizchen.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>概率论之事件的概率</title>
+      <link>https://blog.wizchen.com/post/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B9%8B%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87/</link>
+      <pubDate>Thu, 10 Jan 2019 18:58:02 +0800</pubDate>
+      
+      <guid>https://blog.wizchen.com/post/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B9%8B%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87/</guid>
+      <description>事件的含义 概率的定义 事件的运算  事件的蕴含、包含和相等 事件互斥与对立 事件的和（并）、积（并）与差 条件概率 事件的独立与概率乘法定理 全概率公式与贝叶斯公式 贝叶斯公式   事件的含义 在概率论中，事件的一般含义如下：
+ 有一个明确界定的试验 这个试验的全部可能结果，是在试验之前就明确的 有一个明确的陈述，而且界定了试验的全部可能结果中一个确定的部分  概率的定义 统计定义 ：同样条件下大量次数的重复试验$n$次，在$n$次实验中某事件$E$出现次数为$m$，则频率$\displaystyle{\frac{m}{n}}$可以作为事件$E$的概率$P(E)$的估计。
+公理化定义：在柯式公理体系中，定义一个抽象集合$\Omega$，其元素$\omega$称为基本事件。考虑由$\Omega$的子集（包括$\Omega$本身和空集$\varnothing$）构成的一个集合$\mathcal{F}$。$\mathcal{F}$中的每一个成员就称为“事件”，而概率是事件的函数，将该函数定义一个在$\mathcal{F}$上，记为$P$，对$\mathcal{F}$中任一元素$A$，则$P(A)$记为事件$A$的概率，满足如下三个条件：
+ $0 \leq P(A) \leq 1$。对于$\mathcal{F}$中的任何成员$A$，要求概率的值在$0$到$1$之间 $P(\Omega) = 1, P(\varnothing) = 0$。必然事件概率为1，不可能事件概率为0。 若干个互斥事件之和的概率，等于各事件的概率之和，即 \( P(A_1 + A_2 + \cdots) = P(A_1) + P(A_2) + \cdots \) 事件的个数可以使有限的或者无限的，这又称为概率的加法定理。  事件的运算 事件的蕴含、包含和相等 同一试验条件下的两个事件$A$和$B$，如果当$A$发生时$B$必发生，则称$A$蕴含$B$，或者说$B$包含$A$，记为$A \subset B$。若$A, B$相互蕴含，即$A \subset B$且$B \subset A$，则称$A, B$两个事件相等，记为$A = B$。
+事件互斥与对立 若两个事件$A, B$不能在同一次试验中都发生（但可以都不发生），则称它们是互斥事件。如果一些事件中任意两个都互斥，则称这些事件是两两互斥的。
+互斥事件的一个重要情况是“对立”事件，若$A$为一事件，则事件 \( B = \\{ A \text{ 不发生} \\} \) 称为$A$的对立事件，记为$\bar{A}$或者$A^c$。</description>
+    </item>
+    
+  </channel>
+</rss>

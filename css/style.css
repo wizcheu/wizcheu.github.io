@@ -536,3 +536,8 @@ pre {
     overflow: hidden;
     z-index: 10000;
 }
+
+.katex {
+    padding: 0 3px;
+    font-size: 1em;
+}

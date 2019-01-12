@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>概率论之事件的概率 &middot; wizcheu&#39;s blog</title>
+  
+  <meta name="description" content="事件的含义 概率的定义 事件的运算  事件的蕴含、包含和相等 事件互斥与对立 事件的和（并）、积（并）与差 条件概率 事件的独立与概率乘法定理 全概率公式与贝叶斯公式 贝叶斯公式   事件的含义 在概率论中，事件的一般含义如下：
+ 有一个明确界定的试验 这个试验的全部可能结果，是在试验之前就明确的 有一个明确的陈述，而且界定了试验的全部可能结果中一个确定的部分  概率的定义 统计定义 ：同样条件下大量次数的重复试验$n$次，在$n$次实验中某事件$E$出现次数为$m$，则频率$\displaystyle{\frac{m}{n}}$可以作为事件$E$的概率$P(E)$的估计。
+公理化定义：在柯式公理体系中，定义一个抽象集合$\Omega$，其元素$\omega$称为基本事件。考虑由$\Omega$的子集（包括$\Omega$本身和空集$\varnothing$）构成的一个集合$\mathcal{F}$。$\mathcal{F}$中的每一个成员就称为“事件”，而概率是事件的函数，将该函数定义一个在$\mathcal{F}$上，记为$P$，对$\mathcal{F}$中任一元素$A$，则$P(A)$记为事件$A$的概率，满足如下三个条件：
+ $0 \leq P(A) \leq 1$。对于$\mathcal{F}$中的任何成员$A$，要求概率的值在$0$到$1$之间 $P(\Omega) = 1, P(\varnothing) = 0$。必然事件概率为1，不可能事件概率为0。 若干个互斥事件之和的概率，等于各事件的概率之和，即 \( P(A_1 &#43; A_2 &#43; \cdots) = P(A_1) &#43; P(A_2) &#43; \cdots \) 事件的个数可以使有限的或者无限的，这又称为概率的加法定理。  事件的运算 事件的蕴含、包含和相等 同一试验条件下的两个事件$A$和$B$，如果当$A$发生时$B$必发生，则称$A$蕴含$B$，或者说$B$包含$A$，记为$A \subset B$。若$A, B$相互蕴含，即$A \subset B$且$B \subset A$，则称$A, B$两个事件相等，记为$A = B$。
+事件互斥与对立 若两个事件$A, B$不能在同一次试验中都发生（但可以都不发生），则称它们是互斥事件。如果一些事件中任意两个都互斥，则称这些事件是两两互斥的。
+互斥事件的一个重要情况是“对立”事件，若$A$为一事件，则事件 \( B = \\{ A \text{ 不发生} \\} \) 称为$A$的对立事件，记为$\bar{A}$或者$A^c$。">
+  <meta name="author" content="">
+  
+  <link href="/css/font.css" rel="stylesheet">
+  <link href="/css/atom-one-dark.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+  
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="icon" href="/img/favicon.ico">
+  
+  <meta name="generator" content="Hugo 0.53" />
+  
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="wizcheu&#39;s blog">
+  
+  
+  
+  <link rel="stylesheet" href="/css/katex.min.css">
+  <script src="/js/katex.min.js"></script>
+  <script src="/js/auto-render.min.js"></script>
+
+  <link href="/css/style.css" rel="stylesheet">
+  
+</head>
+
+<body class="single">
+  <header class="header">
+    <section>
+      <p class="title"><a href="https://blog.wizchen.com/">WIZCHEU</a></p>
+      <h5>NO ACCUMULATION OF STEPS, NO MILES.</h5>
+    </section>
+    <button class="menu-toggle" type="button"></button>
+    <nav class="menu">
+      <ul>
+        
+        
+        <li class="">
+          <a href="/about/">About</a>
+        </li>
+        
+        <li class="">
+          <a href="/archive/">Archive</a>
+        </li>
+        
+        <li class="">
+          <a href="/tags/">Tags</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+<article class="post post-view">
+  <header class="post-header">
+    <h1 class="post-title">概率论之事件的概率</h1>
+    <p class="post-meta">Jan 10, 2019</p>
+  </header>
+  <div class="post-content"><p><!-- omit in toc --></p>
+
+<ul>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%90%AB%E4%B9%89">事件的含义</a></li>
+<li><a href="#%E6%A6%82%E7%8E%87%E7%9A%84%E5%AE%9A%E4%B9%89">概率的定义</a></li>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%BF%90%E7%AE%97">事件的运算</a>
+
+<ul>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%95%B4%E5%90%AB%E5%8C%85%E5%90%AB%E5%92%8C%E7%9B%B8%E7%AD%89">事件的蕴含、包含和相等</a></li>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E4%BA%92%E6%96%A5%E4%B8%8E%E5%AF%B9%E7%AB%8B">事件互斥与对立</a></li>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%92%8C%E5%B9%B6%E7%A7%AF%E5%B9%B6%E4%B8%8E%E5%B7%AE">事件的和（并）、积（并）与差</a></li>
+<li><a href="#%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87">条件概率</a></li>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E7%8B%AC%E7%AB%8B%E4%B8%8E%E6%A6%82%E7%8E%87%E4%B9%98%E6%B3%95%E5%AE%9A%E7%90%86">事件的独立与概率乘法定理</a></li>
+<li><a href="#%E5%85%A8%E6%A6%82%E7%8E%87%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F">全概率公式与贝叶斯公式</a></li>
+<li><a href="#%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F">贝叶斯公式</a></li>
+</ul></li>
+</ul>
+
+<h3 id="事件的含义">事件的含义</h3>
+
+<p>在概率论中，<strong>事件</strong>的一般含义如下：</p>
+
+<ol>
+<li>有一个明确界定的试验</li>
+<li>这个试验的全部可能结果，是在试验之前就明确的</li>
+<li>有一个明确的陈述，而且界定了试验的全部可能结果中一个确定的部分</li>
+</ol>
+
+<h3 id="概率的定义">概率的定义</h3>
+
+<p><strong>统计定义</strong> ：同样条件下大量次数的重复试验$n$次，在$n$次实验中某事件$E$出现次数为$m$，则频率$\displaystyle{\frac{m}{n}}$可以作为事件$E$的概率$P(E)$的估计。</p>
+
+<p><strong>公理化定义</strong>：在柯式公理体系中，定义一个抽象集合$\Omega$，其元素$\omega$称为基本事件。考虑由$\Omega$的子集（包括$\Omega$本身和空集$\varnothing$）构成的一个集合$\mathcal{F}$。$\mathcal{F}$中的每一个成员就称为“事件”，而概率是事件的函数，将该函数定义一个在$\mathcal{F}$上，记为$P$，对$\mathcal{F}$中任一元素$A$，则$P(A)$记为事件$A$的概率，满足如下三个条件：</p>
+
+<ol>
+<li>$0 \leq P(A) \leq 1$。对于$\mathcal{F}$中的任何成员$A$，要求概率的值在$0$到$1$之间</li>
+<li>$P(\Omega) = 1, P(\varnothing) = 0$。必然事件概率为1，不可能事件概率为0。</li>
+<li>若干个互斥事件之和的概率，等于各事件的概率之和，即
+<span  class="math">\(
+P(A_1 + A_2 + \cdots) = P(A_1) + P(A_2) + \cdots
+\)</span>
+事件的个数可以使有限的或者无限的，这又称为概率的加法定理。</li>
+</ol>
+
+<h3 id="事件的运算">事件的运算</h3>
+
+<h4 id="事件的蕴含包含和相等">事件的蕴含、包含和相等</h4>
+
+<p>同一试验条件下的两个事件$A$和$B$，如果当$A$发生时$B$必发生，则称$A$蕴含$B$，或者说$B$包含$A$，记为$A \subset B$。若$A, B$相互蕴含，即$A \subset B$且$B \subset A$，则称$A, B$两个事件相等，记为$A = B$。</p>
+
+<h4 id="事件互斥与对立">事件互斥与对立</h4>
+
+<p>若两个事件$A, B$不能在同一次试验中都发生（但可以都不发生），则称它们是互斥事件。如果一些事件中任意两个都互斥，则称这些事件是两两互斥的。</p>
+
+<p>互斥事件的一个重要情况是“对立”事件，若$A$为一事件，则事件
+<span  class="math">\(
+B = \\{ A \text{ 不发生} \\}
+\)</span>
+称为$A$的对立事件，记为$\bar{A}$或者$A^c$。</p>
+
+<h4 id="事件的和并积并与差">事件的和（并）、积（并）与差</h4>
+
+<p>设两个事件$A, B$，定义一个新事件$C$如下：
+<span  class="math">\(
+C = \\{ A \text{ 发生，或 } B \text{ 发生} \\} = \\{ A, B \text{ 至少发生一个 } \\}
+\)</span>
+则事件$C$称为事件$A$与事件$B$的和，事件的和的定义可以推广到无限个事件的情形。</p>
+
+<p>设两个事件$A, B$，定义一个新事件$C$如下：
+<span  class="math">\(
+C = \\{ A, B \text{ 都发生 } \\}
+\)</span>
+则事件$C$称为事件$A$与事件$B$的积，事件的积的定义可以推广到无限个事件的情形。</p>
+
+<p>两个事件$A, B$之差，记为$A - B$，定义为：
+<span  class="math">\(
+A - B = \\{ A \text{ 发生，} B \text{ 不发生} \\}
+\)</span></p>
+
+<h4 id="条件概率">条件概率</h4>
+
+<p>设有两个事件$A, B$，而$P(B) \neq 0$，在“给定$B$发生的条件下$A$的条件概率”，记为$P(A|B)$，定义为
+<span  class="math">\(
+P(A|B) = P(AB)/P(B)
+\)</span></p>
+
+<h4 id="事件的独立与概率乘法定理">事件的独立与概率乘法定理</h4>
+
+<p>若两个事件$A, B$满足
+<span  class="math">\(
+P(AB) = P(A)P(B)
+\)</span>
+则称$A, B$独立，即两个独立事件$A, B$的积$AB$的概率$P(AB)$等于其各概率的积$P(A)P(B)$。</p>
+
+<p>设$A_1, A_2, \cdots$为有限或者无限个事件，如果从其中任意取出有限个事件$A_{i_1}, A_{i_2}, \cdots, A_{i_m}$，均满足下式：
+<span  class="math">\(
+P(A\_{i_1}, A\_{i_2}, \cdots, A\_{i_m}) = P(A\_{i_1})P(A\_{i_2}) \cdots P(A\_{i_m})
+\)</span>
+则称事件$A_1, A_2, \cdots$相互独立，简称独立。</p>
+
+<p>由独立性定义可以得出概率乘法定理：若干个独立事件$A_1, A_2, \cdots, A_n$之积的概率，等于各个事件概率的乘积：
+<span  class="math">\(
+P(A_1, A_2, \cdots, A_n) = P(A_1)P(A_2) \cdots P(A_n)
+\)</span></p>
+
+<p>由独立性的定义可推出：</p>
+
+<ul>
+<li>独立事件的任一部分也独立</li>
+<li>若一系列事件$A_1, A_2, \cdots$相互独立，则将其中任一部分改为对立事件时，所得事件仍为相互独立。</li>
+</ul>
+
+<h4 id="全概率公式与贝叶斯公式">全概率公式与贝叶斯公式</h4>
+
+<p>设$B_1, B_2, \cdots$为有限或无限个事件，它们两两互斥且在每次试验中至少发生一次，即
+<span  class="math">\(
+B_i B_j = \varnothing (i \neq j) \text{（不可能事件）} \\
+B_1 + B_2 + \cdots = \Omega \text{（必然事件）}
+\)</span>
+把具有这些性质的一组事件称为一个“完备事件群”。</p>
+
+<p>考虑任一事件$A$，因$\Omega$为必然事件，有$A = A\Omega = AB_1 + AB_2 + \cdots$，又因$B_1, B_2, \cdots$两两互斥，显然$AB_1, AB_2, \cdots$也两两互斥，根据加法定理有
+<span  class="math">\(
+P(A) = P(AB_1) + P(AB_2) + \cdots
+\)</span>
+再根据条件概率的定义$P(AB_i) = P(A)P(B_i)$，代入上式可得：
+<span  class="math">\(
+P(A) = P(B_1)P(A|B_1) + P(B_2)P(A|B_2) + \cdots
+\)</span>
+上式即称为<strong>全概率公式</strong>。</p>
+
+<h4 id="贝叶斯公式">贝叶斯公式</h4>
+
+<p>在全概率公式的假定之下，有贝叶斯公式如下：
+<span  class="math">\(
+\begin{aligned}
+P(B_i|A) &= P(AB_i)/P(A) \\
+&= \frac{P(B_i)P(A|B_i)}{\displaystyle{\sum_j P(B_j)P(A|B_j)}}
+\end{aligned}
+\)</span></p>
+
+<p>如果我们把事件$A$看成“结果”，把诸事件$B_1, B_2, \cdots$看成导致这个结果可能的“原因”，则可以形象地把全概率公式看做“由原因推导结果”；而贝叶斯公式则恰好相反，其作用在于“由结果推导原因”：现在有一个“结果”$A$已经发生了，在众多的可能“原因”中，到底是哪一个导致了这个结果？而贝叶斯公式真好刻画了各“原因”$B_i$可能性的大小与$P(B_i|A)$成比例。</p>
+</div>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="https://blog.wizchen.com/tags/math/">Math</a></li>
+      
+      <li><a href="https://blog.wizchen.com/tags/probability/">Probability</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+</main>
+
+<script>
+  renderMathInElement(document.body,
+    {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: true },
+        { left: "[(", right: ")]", display: false },
+      ]
+    })
+</script>
+
+
+<div class="back-to-top">
+  <a href="#"><img title="返回顶部" src="/img/top.png" /></a>
+</div>
+<footer class="footer">
+  <span>&copy; 2019 Released under the MIT license</span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a>️</span>
+</footer>
+<script src="/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script src="/js/highlight.min.js" data-no-instant></script>
+<script data-no-instant>
+  addMenuListener();
+  InstantClick.on('change', function () {
+    addMenuListener();
+  });
+  function addMenuListener() {
+    var $toggle = document.querySelector('.menu-toggle');
+    var $body = document.querySelector('body');
+    $toggle.addEventListener('click', function () {
+      $body.classList.toggle('noscroll');
+    }, false);
+  }
+</script>
+
+<script>
+  window.onscroll = function (e) {
+    var scrollTop = window.pageYOffset
+      || document.documentElement.scrollTop
+      || document.body.scrollTop
+      || 0
+    if (scrollTop >= 1200) {
+      document.getElementsByClassName('back-to-top')[0].style.display = 'block';
+    } else {
+      document.getElementsByClassName('back-to-top')[0].style.display = 'none';
+    }
+  }
+</script>
+</body>
+
+</html>

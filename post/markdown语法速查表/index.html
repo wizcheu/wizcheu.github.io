@@ -8,13 +8,12 @@
   
   <title>Markdown语法速查表 &middot; wizcheu&#39;s blog</title>
   
-  <meta name="description" content="1. Overview 2. Headings  2.1. Alternate Syntax  3. Paragraphs 4. Line Breaks 5. Emphasis  5.1. Bold 5.2. Italic 5.3. Bold and Italic  6. Blockquotes  6.1. Blockquotes with Multiple Paragraphs 6.2. Nested Blockquotes 6.3. Blockquotes with Other Elements  7. Lists  7.1. Ordered Lists 7.2. Unordered Lists 7.3. Adding Elements in Lists  7.3.1. Paragraphs 7.3.2. Blockquotes 7.3.3. Code Blocks 7.3.4. Images   8.">
+  <meta name="description" content="Overview Headings  Alternate Syntax  Paragraphs Line Breaks Emphasis  Bold Italic Bold and Italic  Blockquotes  Blockquotes with Multiple Paragraphs Nested Blockquotes Blockquotes with Other Elements  Lists  Ordered Lists Unordered Lists Adding Elements in Lists  Paragraphs Blockquotes Code Blocks Images   Code  Escaping Tick Marks Code Blocks  Horizontal Rules Links  Adding Titles URLs and Email Addresses Formatting Links Reference-style Links  Formatting the First Part of the Link Formatting the Second Part of the Link An Example Putting the Parts Together   Images  Linking Images  Escaping Characters  Characters You Can Escape   Overview Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document.">
   <meta name="author" content="">
   
   <link href="/css/font.css" rel="stylesheet">
   <link href="/css/atom-one-dark.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
   
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
   <link rel="icon" href="/img/favicon.ico">
@@ -28,6 +27,8 @@
   <link rel="stylesheet" href="/css/katex.min.css">
   <script src="/js/katex.min.js"></script>
   <script src="/js/auto-render.min.js"></script>
+
+  <link href="/css/style.css" rel="stylesheet">
   
 </head>
 
@@ -63,96 +64,87 @@
     <h1 class="post-title">Markdown语法速查表</h1>
     <p class="post-meta">Jan 10, 2019</p>
   </header>
-  <div class="post-content">
-
-<!-- vscode-markdown-toc -->
+  <div class="post-content"><p><!-- omit in toc --></p>
 
 <ul>
-<li>1. <a href="#Overview">Overview</a></li>
-<li>2. <a href="#Headings">Headings</a>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#headings">Headings</a>
 
 <ul>
-<li>2.1. <a href="#AlternateSyntax">Alternate Syntax</a></li>
+<li><a href="#alternate-syntax">Alternate Syntax</a></li>
 </ul></li>
-<li>3. <a href="#Paragraphs">Paragraphs</a></li>
-<li>4. <a href="#LineBreaks">Line Breaks</a></li>
-<li>5. <a href="#Emphasis">Emphasis</a>
+<li><a href="#paragraphs">Paragraphs</a></li>
+<li><a href="#line-breaks">Line Breaks</a></li>
+<li><a href="#emphasis">Emphasis</a>
 
 <ul>
-<li>5.1. <a href="#Bold">Bold</a></li>
-<li>5.2. <a href="#Italic">Italic</a></li>
-<li>5.3. <a href="#BoldandItalic">Bold and Italic</a></li>
+<li><a href="#bold">Bold</a></li>
+<li><a href="#italic">Italic</a></li>
+<li><a href="#bold-and-italic">Bold and Italic</a></li>
 </ul></li>
-<li>6. <a href="#Blockquotes">Blockquotes</a>
+<li><a href="#blockquotes">Blockquotes</a>
 
 <ul>
-<li>6.1. <a href="#BlockquoteswithMultipleParagraphs">Blockquotes with Multiple Paragraphs</a></li>
-<li>6.2. <a href="#NestedBlockquotes">Nested Blockquotes</a></li>
-<li>6.3. <a href="#BlockquoteswithOtherElements">Blockquotes with Other Elements</a></li>
+<li><a href="#blockquotes-with-multiple-paragraphs">Blockquotes with Multiple Paragraphs</a></li>
+<li><a href="#nested-blockquotes">Nested Blockquotes</a></li>
+<li><a href="#blockquotes-with-other-elements">Blockquotes with Other Elements</a></li>
 </ul></li>
-<li>7. <a href="#Lists">Lists</a>
+<li><a href="#lists">Lists</a>
 
 <ul>
-<li>7.1. <a href="#OrderedLists">Ordered Lists</a></li>
-<li>7.2. <a href="#UnorderedLists">Unordered Lists</a></li>
-<li>7.3. <a href="#AddingElementsinLists">Adding Elements in Lists</a>
+<li><a href="#ordered-lists">Ordered Lists</a></li>
+<li><a href="#unordered-lists">Unordered Lists</a></li>
+<li><a href="#adding-elements-in-lists">Adding Elements in Lists</a>
 
 <ul>
-<li>7.3.1. <a href="#Paragraphs-1">Paragraphs</a></li>
-<li>7.3.2. <a href="#Blockquotes-1">Blockquotes</a></li>
-<li>7.3.3. <a href="#CodeBlocks">Code Blocks</a></li>
-<li>7.3.4. <a href="#Images">Images</a></li>
+<li><a href="#paragraphs-1">Paragraphs</a></li>
+<li><a href="#blockquotes-1">Blockquotes</a></li>
+<li><a href="#code-blocks">Code Blocks</a></li>
+<li><a href="#images">Images</a></li>
 </ul></li>
 </ul></li>
-<li>8. <a href="#Code">Code</a>
+<li><a href="#code">Code</a>
 
 <ul>
-<li>8.1. <a href="#EscapingTickMarks">Escaping Tick Marks</a></li>
-<li>8.2. <a href="#CodeBlocks-1">Code Blocks</a></li>
+<li><a href="#escaping-tick-marks">Escaping Tick Marks</a></li>
+<li><a href="#code-blocks-1">Code Blocks</a></li>
 </ul></li>
-<li>9. <a href="#HorizontalRules">Horizontal Rules</a></li>
-<li>10. <a href="#Links">Links</a>
+<li><a href="#horizontal-rules">Horizontal Rules</a></li>
+<li><a href="#links">Links</a>
 
 <ul>
-<li>10.1. <a href="#AddingTitles">Adding Titles</a></li>
-<li>10.2. <a href="#URLsandEmailAddresses">URLs and Email Addresses</a></li>
-<li>10.3. <a href="#FormattingLinks">Formatting Links</a></li>
-<li>10.4. <a href="#Reference-styleLinks">Reference-style Links</a>
+<li><a href="#adding-titles">Adding Titles</a></li>
+<li><a href="#urls-and-email-addresses">URLs and Email Addresses</a></li>
+<li><a href="#formatting-links">Formatting Links</a></li>
+<li><a href="#reference-style-links">Reference-style Links</a>
 
 <ul>
-<li>10.4.1. <a href="#FormattingtheFirstPartoftheLink">Formatting the First Part of the Link</a></li>
-<li>10.4.2. <a href="#FormattingtheSecondPartoftheLink">Formatting the Second Part of the Link</a></li>
-<li>10.4.3. <a href="#AnExamplePuttingthePartsTogether">An Example Putting the Parts Together</a></li>
+<li><a href="#formatting-the-first-part-of-the-link">Formatting the First Part of the Link</a></li>
+<li><a href="#formatting-the-second-part-of-the-link">Formatting the Second Part of the Link</a></li>
+<li><a href="#an-example-putting-the-parts-together">An Example Putting the Parts Together</a></li>
 </ul></li>
 </ul></li>
-<li>11. <a href="#Images-1">Images</a>
+<li><a href="#images-1">Images</a>
 
 <ul>
-<li>11.1. <a href="#LinkingImages">Linking Images</a></li>
+<li><a href="#linking-images">Linking Images</a></li>
 </ul></li>
-<li>12. <a href="#EscapingCharacters">Escaping Characters</a>
+<li><a href="#escaping-characters">Escaping Characters</a>
 
 <ul>
-<li>12.1. <a href="#CharactersYouCanEscape">Characters You Can Escape</a></li>
+<li><a href="#characters-you-can-escape">Characters You Can Escape</a></li>
 </ul></li>
 </ul>
 
-<!-- vscode-markdown-toc-config
-    numbering=true
-    autoSave=true
-    /vscode-markdown-toc-config -->
-
-<!-- /vscode-markdown-toc -->
-
-<h2 id="1-a-name-overview-a-overview">1. <a name='Overview'></a>Overview</h2>
+<h2 id="overview">Overview</h2>
 
 <p>Nearly all Markdown applications support the basic syntax outlined in John Gruber’s original design document. There are minor variations and discrepancies between Markdown processors — those are noted inline wherever possible.</p>
 
 <blockquote>
-<p>Note: Using Markdown doesn&rsquo;t mean that you can&rsquo;t also use HTML. You can add HTML tags to any Markdown file. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find that it&rsquo;s easier to use HTML tags for images.</p>
+<p>Note: Using Markdown doesn't mean that you can't also use HTML. You can add HTML tags to any Markdown file. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find that it's easier to use HTML tags for images.</p>
 </blockquote>
 
-<h2 id="2-a-name-headings-a-headings">2. <a name='Headings'></a>Headings</h2>
+<h2 id="headings">Headings</h2>
 
 <p>To create a heading, add number signs (<code>#</code>) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (<code>&lt;h3&gt;</code>), use three number signs (e.g., <code>### My Header</code>).</p>
 
@@ -204,7 +196,7 @@
 </tbody>
 </table>
 
-<h3 id="2-1-a-name-alternatesyntax-a-alternate-syntax">2.1. <a name='AlternateSyntax'></a>Alternate Syntax</h3>
+<h3 id="alternate-syntax">Alternate Syntax</h3>
 
 <p>Alternatively, on the line below the text, add any number of <code>==</code> characters for heading level 1 or <code>--</code> characters for heading level 2.</p>
 
@@ -232,7 +224,7 @@
 </tbody>
 </table>
 
-<h2 id="3-a-name-paragraphs-a-paragraphs">3. <a name='Paragraphs'></a>Paragraphs</h2>
+<h2 id="paragraphs">Paragraphs</h2>
 
 <p>To create paragraphs, use a blank line to separate one or more lines of text. You should not indent paragraphs with spaces or tabs.</p>
 
@@ -249,12 +241,12 @@
 <tr>
 <td><code>I really like using Markdown.</code> <br> <br> <code>I think I'll use it to format all of my documents from now on.</code></td>
 <td><code>&lt;p&gt;I really like using Markdown.&lt;/p&gt;</code> <br><br> <code>&lt;p&gt;I think I'll use it to format all of my documents from now on.&lt;/p&gt;</code></td>
-<td>I really like using Markdown. <br><br> I think I&rsquo;ll use it to format all of my documents from now on.</td>
+<td>I really like using Markdown. <br><br> I think I'll use it to format all of my documents from now on.</td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="4-a-name-linebreaks-a-line-breaks">4. <a name='LineBreaks'></a>Line Breaks</h2>
+<h2 id="line-breaks">Line Breaks</h2>
 
 <p>To create a line break (<code>&lt;br&gt;</code>), end a line with two or more spaces, and then type return.</p>
 
@@ -276,11 +268,11 @@
 </tbody>
 </table>
 
-<h2 id="5-a-name-emphasis-a-emphasis">5. <a name='Emphasis'></a>Emphasis</h2>
+<h2 id="emphasis">Emphasis</h2>
 
 <p>You can add emphasis by making text bold or italic.</p>
 
-<h3 id="5-1-a-name-bold-a-bold">5.1. <a name='Bold'></a>Bold</h3>
+<h3 id="bold">Bold</h3>
 
 <p>To bold text, add two asterisks or underscores before and after a word or phrase. To bold the middle of a word for emphasis, add two asterisks without spaces around the letters.</p>
 
@@ -314,7 +306,7 @@
 </tbody>
 </table>
 
-<h3 id="5-2-a-name-italic-a-italic">5.2. <a name='Italic'></a>Italic</h3>
+<h3 id="italic">Italic</h3>
 
 <p>To italicize text, add one asterisk or underscore before and after a word or phrase. To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters.</p>
 
@@ -331,18 +323,18 @@
 <tr>
 <td><code>Italicized text is the *cat's meow*.</code></td>
 <td><code>Italicized text is the &lt;em&gt;cat's meow&lt;em&gt;.</code></td>
-<td>Italicized text is the <em>cat&rsquo;s meow</em>.</td>
+<td>Italicized text is the <em>cat's meow</em>.</td>
 </tr>
 
 <tr>
 <td><code>Italicized text is the _cat's meow_.</code></td>
 <td><code>Italicized text is the &lt;em&gt;cat's meow&lt;em&gt;.</code></td>
-<td>Italicized text is the <em>cat&rsquo;s meow</em>.</td>
+<td>Italicized text is the <em>cat's meow</em>.</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="5-3-a-name-boldanditalic-a-bold-and-italic">5.3. <a name='BoldandItalic'></a>Bold and Italic</h3>
+<h3 id="bold-and-italic">Bold and Italic</h3>
 
 <p>To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.</p>
 
@@ -382,7 +374,7 @@
 </tbody>
 </table>
 
-<h2 id="6-a-name-blockquotes-a-blockquotes">6. <a name='Blockquotes'></a>Blockquotes</h2>
+<h2 id="blockquotes">Blockquotes</h2>
 
 <p>To create a blockquote, add a <code>&gt;</code> in front of a paragraph.</p>
 
@@ -395,7 +387,7 @@
 <p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
 </blockquote>
 
-<h3 id="6-1-a-name-blockquoteswithmultipleparagraphs-a-blockquotes-with-multiple-paragraphs">6.1. <a name='BlockquoteswithMultipleParagraphs'></a>Blockquotes with Multiple Paragraphs</h3>
+<h3 id="blockquotes-with-multiple-paragraphs">Blockquotes with Multiple Paragraphs</h3>
 
 <p>Blockquotes can contain multiple paragraphs. Add a <code>&gt;</code> on the blank lines between the paragraphs.</p>
 
@@ -412,7 +404,7 @@
 <p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
 </blockquote>
 
-<h3 id="6-2-a-name-nestedblockquotes-a-nested-blockquotes">6.2. <a name='NestedBlockquotes'></a>Nested Blockquotes</h3>
+<h3 id="nested-blockquotes">Nested Blockquotes</h3>
 
 <p>Blockquotes can be nested. Add a <code>&gt;&gt;</code> in front of the paragraph you want to nest.</p>
 
@@ -431,7 +423,7 @@
 </blockquote>
 </blockquote>
 
-<h3 id="6-3-a-name-blockquoteswithotherelements-a-blockquotes-with-other-elements">6.3. <a name='BlockquoteswithOtherElements'></a>Blockquotes with Other Elements</h3>
+<h3 id="blockquotes-with-other-elements">Blockquotes with Other Elements</h3>
 
 <p>Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.</p>
 
@@ -456,11 +448,11 @@
 <p><em>Everything</em> is going according to <strong>plan</strong>.</p>
 </blockquote>
 
-<h2 id="7-a-name-lists-a-lists">7. <a name='Lists'></a>Lists</h2>
+<h2 id="lists">Lists</h2>
 
 <p>You can organize items into ordered and unordered lists.</p>
 
-<h3 id="7-1-a-name-orderedlists-a-ordered-lists">7.1. <a name='OrderedLists'></a>Ordered Lists</h3>
+<h3 id="ordered-lists">Ordered Lists</h3>
 
 <p>To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.</p>
 
@@ -494,7 +486,7 @@
 </tbody>
 </table>
 
-<h3 id="7-2-a-name-unorderedlists-a-unordered-lists">7.2. <a name='UnorderedLists'></a>Unordered Lists</h3>
+<h3 id="unordered-lists">Unordered Lists</h3>
 
 <p>To create an unordered list, add dashes (<code>-</code>), asterisks (<code>*</code>), or plus signs (<code>+</code>) in front of line items. Indent one or more items to create a nested list.</p>
 
@@ -534,11 +526,11 @@
 </tbody>
 </table>
 
-<h3 id="7-3-a-name-addingelementsinlists-a-adding-elements-in-lists">7.3. <a name='AddingElementsinLists'></a>Adding Elements in Lists</h3>
+<h3 id="adding-elements-in-lists">Adding Elements in Lists</h3>
 
 <p>To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab, as shown in the following examples.</p>
 
-<h4 id="7-3-1-a-name-paragraphs-1-a-paragraphs">7.3.1. <a name='Paragraphs-1'></a>Paragraphs</h4>
+<h4 id="paragraphs-1">Paragraphs</h4>
 
 <pre><code>*   This is the first list item.
 *   Here's the second list item.
@@ -553,14 +545,14 @@
 <ul>
 <li>This is the first list item.</li>
 
-<li><p>Here&rsquo;s the second list item.</p>
+<li><p>Here's the second list item.</p>
 
 <p>I need to add another paragraph below the second list item.</p></li>
 
-<li><p>And here&rsquo;s the third list item.</p></li>
+<li><p>And here's the third list item.</p></li>
 </ul>
 
-<h4 id="7-3-2-a-name-blockquotes-1-a-blockquotes">7.3.2. <a name='Blockquotes-1'></a>Blockquotes</h4>
+<h4 id="blockquotes-1">Blockquotes</h4>
 
 <pre><code>*   This is the first list item.
 *   Here's the second list item.
@@ -575,16 +567,16 @@
 <ul>
 <li>This is the first list item.</li>
 
-<li><p>Here&rsquo;s the second list item.</p>
+<li><p>Here's the second list item.</p>
 
 <blockquote>
 <p>A blockquote would look great below the second list item.</p>
 </blockquote></li>
 
-<li><p>And here&rsquo;s the third list item.</p></li>
+<li><p>And here's the third list item.</p></li>
 </ul>
 
-<h4 id="7-3-3-a-name-codeblocks-a-code-blocks">7.3.3. <a name='CodeBlocks'></a>Code Blocks</h4>
+<h4 id="code-blocks">Code Blocks</h4>
 
 <p>Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.</p>
 
@@ -615,7 +607,7 @@
 <li><p>Update the title to match the name of your website.</p></li>
 </ol>
 
-<h4 id="7-3-4-a-name-images-a-images">7.3.4. <a name='Images'></a>Images</h4>
+<h4 id="images">Images</h4>
 
 <pre><code>1.  Open the file containing the Linux mascot.
 2.  Marvel at its beauty.
@@ -632,12 +624,12 @@
 
 <li><p>Marvel at its beauty.</p>
 
-<p><img src="https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png" alt="Tux, the Linux mascot" /></p></li>
+<p><figure><img src="https://d33wubrfki0l68.cloudfront.net/e7ed9fe4bafe46e275c807d63591f85f9ab246ba/e2d28/assets/images/tux.png" alt="Tux, the Linux mascot"></figure></p></li>
 
 <li><p>Close the file.</p></li>
 </ol>
 
-<h2 id="8-a-name-code-a-code">8. <a name='Code'></a>Code</h2>
+<h2 id="code">Code</h2>
 
 <p>To denote a word or phrase as code, enclose it in tick marks (<code>`</code>).</p>
 
@@ -659,7 +651,7 @@
 </tbody>
 </table>
 
-<h3 id="8-1-a-name-escapingtickmarks-a-escaping-tick-marks">8.1. <a name='EscapingTickMarks'></a>Escaping Tick Marks</h3>
+<h3 id="escaping-tick-marks">Escaping Tick Marks</h3>
 
 <p>If the word or phrase you want to denote as code includes one or more tick marks, you can escape it by enclosing the word or phrase in double tick marks (<code>``</code>).</p>
 
@@ -681,7 +673,7 @@
 </tbody>
 </table>
 
-<h3 id="8-2-a-name-codeblocks-1-a-code-blocks">8.2. <a name='CodeBlocks-1'></a>Code Blocks</h3>
+<h3 id="code-blocks-1">Code Blocks</h3>
 
 <p>To create code blocks, indent every line of the block by at least four spaces or one tab.</p>
 
@@ -699,15 +691,15 @@
 &lt;/html&gt;
 </code></pre>
 
-<h2 id="9-a-name-horizontalrules-a-horizontal-rules">9. <a name='HorizontalRules'></a>Horizontal Rules</h2>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
 
 <p>To create a horizontal rule, use three or more asterisks (<code>***</code>), dashes (<code>---</code>), or underscores (<code>___</code>) on a line by themselves.</p>
 
 <p>The rendered output of all three looks identical:</p>
 
-<hr />
+<hr>
 
-<h2 id="10-a-name-links-a-links">10. <a name='Links'></a>Links</h2>
+<h2 id="links">Links</h2>
 
 <p>To create a link, enclose the link text in brackets (e.g., <code>[Duck Duck Go]</code>) and then follow it immediately with the URL in parentheses (e.g., <code>(https://duckduckgo.com)</code>).</p>
 
@@ -718,7 +710,7 @@
 
 <p>My favorite search engine is <a href="https://duckduckgo.com">Duck Duck Go</a>.</p>
 
-<h3 id="10-1-a-name-addingtitles-a-adding-titles">10.1. <a name='AddingTitles'></a>Adding Titles</h3>
+<h3 id="adding-titles">Adding Titles</h3>
 
 <p>You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in parentheses after the URL.</p>
 
@@ -729,7 +721,7 @@
 
 <p>My favorite search engine is <a href="https://duckduckgo.com" title="The best search engine for privacy">Duck Duck Go</a>.</p>
 
-<h3 id="10-2-a-name-urlsandemailaddresses-a-urls-and-email-addresses">10.2. <a name='URLsandEmailAddresses'></a>URLs and Email Addresses</h3>
+<h3 id="urls-and-email-addresses">URLs and Email Addresses</h3>
 
 <p>To quickly turn a URL or email address into a link, enclose it in angle brackets.</p>
 
@@ -743,7 +735,7 @@
 
 <p><a href="mailto:fake@example.com">fake@example.com</a></p>
 
-<h3 id="10-3-a-name-formattinglinks-a-formatting-links">10.3. <a name='FormattingLinks'></a>Formatting Links</h3>
+<h3 id="formatting-links">Formatting Links</h3>
 
 <p>To emphasize links, add asterisks before and after the brackets and parentheses.</p>
 
@@ -757,11 +749,11 @@ This is the *[Markdown Guide](https://www.markdownguide.org)*.
 
 <p>This is the <em><a href="https://www.markdownguide.org">Markdown Guide</a></em>.</p>
 
-<h3 id="10-4-a-name-reference-stylelinks-a-reference-style-links">10.4. <a name='Reference-styleLinks'></a>Reference-style Links</h3>
+<h3 id="referencestyle-links">Reference-style Links</h3>
 
 <p>Reference-style links are a special kind of link that make URLs easier to display and read in Markdown. Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read.</p>
 
-<h4 id="10-4-1-a-name-formattingthefirstpartofthelink-a-formatting-the-first-part-of-the-link">10.4.1. <a name='FormattingtheFirstPartoftheLink'></a>Formatting the First Part of the Link</h4>
+<h4 id="formatting-the-first-part-of-the-link">Formatting the First Part of the Link</h4>
 
 <p>The first part of a reference-style link is formatted with two sets of brackets. The first set of brackets surrounds the text that should appear linked. The second set of brackets displays a label used to point to the link you’re storing elsewhere in your document.</p>
 
@@ -776,7 +768,7 @@ This is the *[Markdown Guide](https://www.markdownguide.org)*.
 <li><code>[hobbit-hole][A]</code></li>
 </ul>
 
-<h4 id="10-4-2-a-name-formattingthesecondpartofthelink-a-formatting-the-second-part-of-the-link">10.4.2. <a name='FormattingtheSecondPartoftheLink'></a>Formatting the Second Part of the Link</h4>
+<h4 id="formatting-the-second-part-of-the-link">Formatting the Second Part of the Link</h4>
 
 <p>The second part of a reference-style link is formatted with the following attributes:</p>
 
@@ -800,7 +792,7 @@ This is the *[Markdown Guide](https://www.markdownguide.org)*.
 
 <p>You can place this second part of the link anywhere in your Markdown document. Some people place them immediately after the paragraph in which they appear while other people place them at the end of the document (like endnotes or footnotes).</p>
 
-<h4 id="10-4-3-a-name-anexampleputtingthepartstogether-a-an-example-putting-the-parts-together">10.4.3. <a name='AnExamplePuttingthePartsTogether'></a>An Example Putting the Parts Together</h4>
+<h4 id="an-example-putting-the-parts-together">An Example Putting the Parts Together</h4>
 
 <p>Say you add a URL as a standard URL link to a paragraph and it looks like this in Markdown:</p>
 
@@ -827,7 +819,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 <pre><code>&lt;a href=&quot;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&quot; title=&quot;Hobbit lifestyles&quot;&gt;hobbit-hole&lt;/a&gt;
 </code></pre>
 
-<h2 id="11-a-name-images-1-a-images">11. <a name='Images-1'></a>Images</h2>
+<h2 id="images-1">Images</h2>
 
 <p>To add an image, add an exclamation mark (<code>!</code>), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.</p>
 
@@ -836,9 +828,9 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 <p>The rendered output looks like this:</p>
 
-<p><img src="https://d33wubrfki0l68.cloudfront.net/eab45e25bb79970178fab7a2d10cba0209372a59/94d9e/assets/images/philly-magic-garden.jpg" alt="Philadelphia's Magic Gardens. This place was so cool!" title="Philadelphia's Magic Gardens" /></p>
+<p><figure><img src="https://d33wubrfki0l68.cloudfront.net/eab45e25bb79970178fab7a2d10cba0209372a59/94d9e/assets/images/philly-magic-garden.jpg" alt="Philadelphia's Magic Gardens. This place was so cool!" title="Philadelphia's Magic Gardens"><figcaption>Philadelphia's Magic Gardens</figcaption></figure></p>
 
-<h3 id="11-1-a-name-linkingimages-a-linking-images">11.1. <a name='LinkingImages'></a>Linking Images</h3>
+<h3 id="linking-images">Linking Images</h3>
 
 <p>To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.</p>
 
@@ -847,9 +839,9 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 <p>The rendered output looks like this:</p>
 
-<p><a href="https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv"><img src="https://d33wubrfki0l68.cloudfront.net/70a143fdf134aacde3740662a2a47a2a1ee0d216/276c9/assets/images/shiprock.jpg" alt="An old rock in the desert" title="Shiprock, New Mexico by Beau Rogers" /></a></p>
+<p><a href="https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv"><figure><img src="https://d33wubrfki0l68.cloudfront.net/70a143fdf134aacde3740662a2a47a2a1ee0d216/276c9/assets/images/shiprock.jpg" alt="An old rock in the desert" title="Shiprock, New Mexico by Beau Rogers"><figcaption>Shiprock, New Mexico by Beau Rogers</figcaption></figure></a></p>
 
-<h2 id="12-a-name-escapingcharacters-a-escaping-characters">12. <a name='EscapingCharacters'></a>Escaping Characters</h2>
+<h2 id="escaping-characters">Escaping Characters</h2>
 
 <p>To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (<code>\</code>) in front of the character.</p>
 
@@ -860,7 +852,7 @@ eat: it was a [hobbit-hole][1], and that means comfort.
 
 <p>* Without the backslash, this would be a bullet in an unordered list.</p>
 
-<h3 id="12-1-a-name-charactersyoucanescape-a-characters-you-can-escape">12.1. <a name='CharactersYouCanEscape'></a>Characters You Can Escape</h3>
+<h3 id="characters-you-can-escape">Characters You Can Escape</h3>
 
 <p>You can use a backslash to escape the following characters.</p>
 
@@ -957,6 +949,8 @@ eat: it was a [hobbit-hole][1], and that means comfort.
       delimiters: [
         { left: "$$", right: "$$", display: true },
         { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: true },
+        { left: "[(", right: ")]", display: false },
       ]
     })
 </script>
